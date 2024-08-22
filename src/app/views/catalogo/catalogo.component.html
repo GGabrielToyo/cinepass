@@ -1,0 +1,7 @@
+<h2 class="titulo">Catálogo de filmes</h2>
+
+  <div class="container-card">
+    <div *ngFor="let filme of listaFilmes">
+      <app-card [filme]="filme"></app-card>
+    </div>
+  </div>

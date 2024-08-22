@@ -1,0 +1,14 @@
+/* tela-construcao.component.scss */
+
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    text-align: center;
+  }
+  
+  h1 {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }

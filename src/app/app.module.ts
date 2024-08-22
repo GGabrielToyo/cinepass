@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
-import { ModalFilmeComponent } from '../views/modal-filme/modal-filme.component';
+import { ModalFilmeComponent } from '../app/views/modal-filme/modal-filme.component';
+import { CatalogoComponent } from './views/catalogo/catalogo.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TelaConstrucaoComponent } from './components/tela-construcao/tela-construcao.component';
 
 
 @NgModule({
@@ -15,11 +18,14 @@ import { ModalFilmeComponent } from '../views/modal-filme/modal-filme.component'
     CardComponent,
     FooterComponent,
     HeaderComponent,
-    ModalFilmeComponent
+    ModalFilmeComponent,
+    CatalogoComponent,
+    TelaConstrucaoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

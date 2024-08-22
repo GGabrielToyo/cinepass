@@ -1,18 +1,16 @@
 <div class="card">
-    <img
-      src=""
-      alt="Capa do livro">
-    <div class="info-card">
-      <p class="titulo">Velozes e Furiosos</p>
-      <p class="informacoes">Autoria:</p>
-      <p class="resultado">Toretto</p>
-      <p class="informacoes">Data de publicação:</p>
-      <p class="resultado">28\08\2004</p>
-      <p class="informacoes">Produção:</p>
-      <p class="resultado"></p>
-      <button (click)="onModalChange(true)">Mais detalhes</button>
-    </div>
+  <img src="" alt="Capa do livro">
+  <div class="info-card">
+    <p class="titulo">{{filme?.nome}}</p>
+    <p class="informacoes">Genero:</p>
+    <p class="resultado">{{filme?.genero}}</p>
+    <p class="informacoes">Duração</p>
+    <p class="resultado">{{filme?.duracao}}</p>
+    <p class="informacoes">Sessões</p>
+    <p class="resultado">{{filme?.sessoes}}</p>
+    <button (click)="onModalChange(true)">Mais detalhes</button>
   </div>
-  <div *ngIf="modalAberto">
-    <!--<app-modal-livro [livro]="livro" (mudouModal)="onModalChange($event)"></app-modal-livro>-->
-  </div>
+</div>
+<div *ngIf="modalAberto">
+  <app-modal-filme [filme]="filme" (mudouModal)="onModalChange($event.isTrusted)"></app-modal-filme>
+</div>
