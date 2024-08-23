@@ -28,5 +28,11 @@ export class ModalFilmeComponent {
       body.style.overflow = 'hidden';
     }
   }
-  
+
+  comprarIngresso(): void {
+    window.alert('Seguirá o fluxo de compra de ingressos');
+    this.statusModal = false;
+    this.mudouModal.emit(this.statusModal);
+  }
+
 }

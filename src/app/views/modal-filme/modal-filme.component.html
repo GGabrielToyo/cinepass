@@ -6,9 +6,11 @@
       <p class="informacoes">Genero:</p>
       <p class="resultado">{{ filme?.genero }}</p>
       <p class="informacoes">Duração</p>
-      <p class="resultado">{{ filme?.duracao == "Aguardando Estreia" ? filme?.duracao : filme?.duracao + " minutos" }}</p>
+      <p class="resultado">{{ filme?.duracao == "Aguardando Estreia" ? filme?.duracao : filme?.duracao + " minutos" }}
+      </p>
       <p class="informacoes">Sessões</p>
       <p class="resultado">{{ filme?.sessoes }}</p>
+      <button (click)="comprarIngresso()">Comprar ingresso</button>
     </div>
     <button (click)="fecharModal()" class="botao-fechar">
       <span class="material-symbols-outlined">
@@ -17,7 +19,8 @@
     </button>
     <div class="sinopse">
       <h4 class="informacoes">Sinopse</h4>
-      <p class="resultado">{{filme?.sinopse}}<p>
+      <p class="resultado">{{filme?.sinopse}}
+      <p>
     </div>
   </div>
   <div class="overlay"></div>
