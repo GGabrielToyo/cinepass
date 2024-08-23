@@ -10,6 +10,7 @@ import { ModalFilmeComponent } from '../app/views/modal-filme/modal-filme.compon
 import { CatalogoComponent } from './views/catalogo/catalogo.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TelaConstrucaoComponent } from './components/tela-construcao/tela-construcao.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { TelaConstrucaoComponent } from './components/tela-construcao/tela-const
     HeaderComponent,
     ModalFilmeComponent,
     CatalogoComponent,
-    TelaConstrucaoComponent
+    TelaConstrucaoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
