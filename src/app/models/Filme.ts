@@ -4,12 +4,12 @@ export class Filme {
     public nome?: string;
     public sinopse?: string;
     public genero?: string;
-    public duracao?: number;
+    public duracao?: number | string;
     public sessoes?: string;
     public imagemUrl?: string;
 
 
-    constructor(nome: string, sinopse: string, genero: string, duracao: number, sessoes: string, imagemUrl: string) {
+    constructor(nome: string, sinopse: string, genero: string, duracao: number | string, sessoes: string, imagemUrl: string) {
         this.nome = nome;
         this.sinopse = sinopse;
         this.genero = genero;
@@ -39,10 +39,10 @@ export class Filme {
         this.genero = genero;
     }
 
-    public getDuracao(): number | undefined {
+    public getDuracao(): number | string | undefined {
         return this.duracao;
     }
-    public setDuracao(duracao: number): void {
+    public setDuracao(duracao: number | string): void {
         this.duracao = duracao;
     }
 

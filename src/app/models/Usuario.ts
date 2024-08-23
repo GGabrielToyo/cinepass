@@ -7,14 +7,13 @@ export class Usuario {
     public email?: string;
     public dataNascimento?: Date;
 
-    constructor(item: UsuarioInterface) {
-        if (item) {
-            this.nome = item.nome;
-            this.telefone = item.telefone;
-            this.cpf = item.cpf;
-            this.email = item.email;
-            this.dataNascimento = item.dataNascimento;
-        }
+    constructor(nome: string, telefone: string, cpf: string, email: string, dataNascimento: Date) {
+        this.nome = nome;
+        this.telefone = telefone;
+        this.cpf = cpf;
+        this.email = email;
+        this.dataNascimento = dataNascimento;
+
     }
 
     public getNome(): string | undefined {

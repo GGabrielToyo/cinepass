@@ -14,11 +14,11 @@ export class ModalFilmeComponent {
 
   statusModal: boolean = true;
   @Input() filme?: Filme;
-  @Output() close = new EventEmitter();
+  @Output() mudouModal = new EventEmitter();
 
   fecharModal(): void {
     this.statusModal = false;
-    this.close.emit(this.statusModal);
+    this.mudouModal.emit(this.statusModal);
     if (!body) return;
     body.style.overflow = 'scroll';
   }

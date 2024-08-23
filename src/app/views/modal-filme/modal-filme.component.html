@@ -1,14 +1,14 @@
 <section *ngIf="statusModal" class="container">
   <div class="card">
-    <img class="imagem" src="{{filme?.imagemUrl}}" alt="Capa do filme">
+    <img class="imagem" src="{{ filme?.imagemUrl }}" alt="Capa do filme">
     <div class="info-card">
-      <p class="titulo">{{filme?.nome}}</p>
+      <p class="titulo">{{ filme?.nome }}</p>
       <p class="informacoes">Genero:</p>
-      <p class="resultado">{{filme?.genero}}</p>
+      <p class="resultado">{{ filme?.genero }}</p>
       <p class="informacoes">Duração</p>
-      <p class="resultado">{{filme?.duracao}}</p>
+      <p class="resultado">{{ filme?.duracao == "Aguardando Estreia" ? filme?.duracao : filme?.duracao + " minutos" }}</p>
       <p class="informacoes">Sessões</p>
-      <p class="resultado">{{filme?.sessoes}}</p>
+      <p class="resultado">{{ filme?.sessoes }}</p>
     </div>
     <button (click)="fecharModal()" class="botao-fechar">
       <span class="material-symbols-outlined">
