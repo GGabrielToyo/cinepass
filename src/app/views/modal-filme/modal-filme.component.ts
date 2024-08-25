@@ -20,7 +20,7 @@ export class ModalFilmeComponent {
     this.statusModal = false;
     this.mudouModal.emit(this.statusModal);
     if (!body) return;
-    body.style.overflow = 'scroll';
+    body.style.overflow = 'hidden';
   }
 
   esconderScroll(): void {

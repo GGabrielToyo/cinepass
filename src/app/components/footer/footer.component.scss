@@ -1,19 +1,43 @@
 footer {
-    background-color: #050C42;
-    height: 83px;
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat';
-    font-weight: 400;
-    gap: 0.5rem;
+  background-color: #050C42;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  gap: 0.5rem;
+}
+
+footer .titulo {
+  display: flex;
+  padding-top: .5rem;
+}
+
+.pass {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  footer {
+    font-size: 20px;
   }
-  
-  span {
-    margin-right: 0.5rem;
-    font-size: 36px;
+  .pass{
+    font-size: 18px;
   }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    font-size: 24px;
+  }
+  .pass{
+    font-size: 20px;
+  }
+}
